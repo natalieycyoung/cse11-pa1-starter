@@ -9,8 +9,8 @@ CLASSNAME=$(echo $1 | cut -f 1 -d '.')
 
 rm *.class &> /dev/null;
 javac -cp tester.jar *.java &&
-#java -classpath tester.jar;. tester.Main $CLASSNAME
-java -Djava.security.manager=disallow -classpath tester.jar:. tester.Main $CLASSNAME
+java -classpath tester.jar;. tester.Main $CLASSNAME
+#java -Djava.security.manager=disallow -classpath tester.jar:. tester.Main $CLASSNAME
 
 #java -classpath tester.jar;"%cd%" tester.Main %1
 
