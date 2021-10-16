@@ -1,47 +1,54 @@
 Perimeter output:
 
-Perimeter for 1x2 rectangle is 6
-Perimeter for 4x6 rectangle is 20
+this.perimeter1 = 6
+this.perimeter2 = 20
 
 
 Border area output:
 
-Area of border between 1x1 and 2x2 rectangles is 3
-Area of border between 2x5 and 4x5 rectangles is 10
+this.borderArea1 = 3
+this.borderArea2 = 10
 
 
 Converter output:
 
-1 USD = 21 MEX
-45 USD = 945 MEX
+this.conversion1 = 21
+this.conversion2 = 945
 
 
 Combiner output:
 
-2 hours and 31 minutes is 151 minutes
-1 hour and 50 minutes is 110 minutes
-
+this.combine1 = 151
+this.combine2 = 110
 
 
 
 Full program output:
 
 snain@DESKTOP-94H0ET4 ~/Natalie/CSE11/cse11-pa1-starter
-$ java DesignRecipeExamples
+$ javac DesignRecipeExamples.java
 
-Method Testing
-
-Perimeter for 1x2 rectangle is 6
-Perimeter for 4x6 rectangle is 20
-
-Area of border between 1x1 and 2x2 rectangles is 3
-Area of border between 2x5 and 4x5 rectangles is 10
-
-1 USD = 21 MEX
-45 USD = 945 MEX
-
-2 hours and 31 minutes is 151 minutes
-1 hour and 50 minutes is 110 minutes
-
-End of testing
-
+snain@DESKTOP-94H0ET4 ~/Natalie/CSE11/cse11-pa1-starter
+$ ./run.bat Examples
+Tester Library v.3.0
+-----------------------------------
+Tests defined in the class: Examples:
+---------------------------
+Examples:
+---------------
+new Examples:1(
+ this.test = new DesignRecipeExamples:2()
+ this.perimeter1 = 6
+ this.perimeter2 = 20
+ this.borderArea1 = 3
+ this.borderArea2 = 10
+ this.conversion1 = 21
+ this.conversion2 = 945
+ this.combine1 = 151
+ this.combine2 = 110)
+---------------
+No test methods found.
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by tester.Main (file:/C:/Users/snain/OneDrive/Desktop/Natalie/CSE11/cse11-pa1-starter/tester.jar)
+WARNING: Please consider reporting this to the maintainers of tester.Main
+WARNING: System::setSecurityManager will be removed in a future release
