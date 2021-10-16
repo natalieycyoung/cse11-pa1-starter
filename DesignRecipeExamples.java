@@ -82,22 +82,6 @@ class DesignRecipeExamples
 
 		return totalMinutes;
 	}
-
-/*
-
-		// test combineToMinutes method
-		// Not possible to call method with arguments that run but produce incorrect output:
-		// such arguments would be negative numbers, but they would be converted to their
-		// absolute values by the Math.abs() method and result in correct outputs.
-		int combine1 = test.combineToMinutes(2,31); // 2 hrs 31 min == 151 min
-		int combine2 = test.combineToMinutes(1,50);	// 1 hr 51 min == 111 min
-
-		System.out.print("\n\n2 hours and 31 minutes is " + combine1 + " minutes" +
-				"\n1 hour and 50 minutes is " + combine2 + " minutes");
-
-		System.out.println("\n\nEnd of testing");
-	}
-*/
 }
 
 class Examples
@@ -108,8 +92,8 @@ class Examples
 
 	// Test for Problem 1: Perimeter
 	// No differences found when values tested on online calculator
-	int perimeterEx1 = test.perimeter(1,2);	// expected value: 6
-	int perimeterEx2 = test.perimeter(4,6);	// expected value: 2
+	int perimeter1 = test.perimeter(1,2);	// expected value: 6
+	int perimeter2 = test.perimeter(4,6);	// expected value: 2
 
 	// Test for Problem 2: Border Area
 	// No differences found when values tested on online calculator
@@ -124,4 +108,10 @@ class Examples
 	int conversion1 = test.USDtoMEX(1);			// expected: conversion1 = 21
 	int conversion2 = test.USDtoMEX(45);		// expected: conversion2 = 945
 
+	// Test for Problem 4: Combiner
+	// Not possible to call method with arguments that run but produce incorrect output:
+	// such arguments would be negative numbers, but they would be converted to their
+	// absolute values by the Math.abs() method and result in correct outputs.
+	int combine1 = test.combineToMinutes(2,31); // 2 hrs 31 min == 151 min
+	int combine2 = test.combineToMinutes(1,50);	// 1 hr 51 min == 111 min
 }
