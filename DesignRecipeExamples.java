@@ -8,6 +8,10 @@ import java.lang.Math;
 
 class DesignRecipeExamples
 {
+
+	DesignRecipeExamples()
+	{}
+
 	/**
 	 * Problem 1
 	 * Returns perimeter of rectangle given its width and height
@@ -79,37 +83,7 @@ class DesignRecipeExamples
 		return totalMinutes;
 	}
 
-	public static void main(String[] args)
-	{
-
-		DesignRecipeExamples test = new DesignRecipeExamples();
-		
-		System.out.println("\nMethod Testing");
-
-		// test perimeter method
-		int perim1 = test.perimeter(1,2);		// expected: perim1 = 6
-		int perim2 = test.perimeter(4,6);		// expected: perim2 = 20
-
-		System.out.print("\nPerimeter for 1x2 rectangle is " + perim1 +
-				"\nPerimeter for 4x6 rectangle is " + perim2);
-
-		//test borderArea method
-		int borderArea1 = test.borderArea(1,1,2,2);		// expected: borderArea1 = 3
-		int borderArea2 = test.borderArea(2,5,4,5);		// expected: borderArea2 = 10
-
-		System.out.print("\n\nArea of border between 1x1 and 2x2 rectangles is " + borderArea1 +
-				"\nArea of border between 2x5 and 4x5 rectangles is " + borderArea2);
-
-		// test USDtoMEX currency converter method
-		// Reference converter (XE Currency) gives 1 USD = 20.75 MEX.
-		// Discrepancy can be attributed to manually-rounded conversion rate in
-		// method definition. Program would not compile due to incompatible types error:
-		// "possible lossy conversion from double to int".
-		int conversion1 = test.USDtoMEX(1);			// expected: conversion1 = 21
-		int conversion2 = test.USDtoMEX(45);		// expected: conversion2 = 945
-
-		System.out.print("\n\n1 USD = " + conversion1 + " MEX" +
-				"\n45 USD = " + conversion2 + " MEX");
+/*
 
 		// test combineToMinutes method
 		// Not possible to call method with arguments that run but produce incorrect output:
@@ -123,4 +97,31 @@ class DesignRecipeExamples
 
 		System.out.println("\n\nEnd of testing");
 	}
+*/
+}
+
+class Examples
+{
+	// EXAMPLES
+
+	DesignRecipeExamples test = new DesignRecipeExamples();
+
+	// Test for Problem 1: Perimeter
+	// No differences found when values tested on online calculator
+	int perimeterEx1 = test.perimeter(1,2);	// expected value: 6
+	int perimeterEx2 = test.perimeter(4,6);	// expected value: 2
+
+	// Test for Problem 2: Border Area
+	// No differences found when values tested on online calculator
+	int borderArea1 = test.borderArea(1,1,2,2);		// expected: borderArea1 = 3
+	int borderArea2 = test.borderArea(2,5,4,5);		// expected: borderArea2 = 10
+
+	// Test for Problem 3: Currency Converter, USD to MEX
+	// Reference converter (XE Currency) gives 1 USD = 20.75 MEX.
+	// Discrepancy can be attributed to manually-rounded conversion rate in
+	// method definition. Program would not compile due to incompatible types error:
+	// "possible lossy conversion from double to int".
+	int conversion1 = test.USDtoMEX(1);			// expected: conversion1 = 21
+	int conversion2 = test.USDtoMEX(45);		// expected: conversion2 = 945
+
 }
